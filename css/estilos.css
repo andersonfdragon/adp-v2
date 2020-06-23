@@ -1,0 +1,1437 @@
+/*FUENTES*/
+@font-face{
+	font-family: 'Arsenal-Bold';
+	src: url("fonts/Arsenal-Bold.ttf") format("truetype");
+	font-weight:normal;
+}
+
+@font-face{
+	font-family: 'Arsenal-Regular';
+	src: url("fonts/Arsenal-Regular.ttf") format("truetype");
+	font-weight:normal;
+}
+
+@font-face{
+	font-family: 'Lato-Regular';
+	src: url("fonts/Lato-Regular.ttf") format("truetype");
+	font-weight:normal;
+}
+
+@font-face{
+	font-family: 'Roboto-Regular';
+	src: url("fonts/Roboto-Regular.ttf") format("truetype");
+	font-weight:normal;
+}
+
+@font-face{
+	font-family: 'Roboto-Thin';
+	src: url("fonts/Roboto-Thin.ttf") format("truetype");
+	font-weight:normal;
+}
+
+@font-face{
+	font-family: 'Roboto-Bold-Italic';
+	src: url("fonts/Roboto-Bold-Italic.ttf") format("truetype");
+	font-weight:normal;
+}
+
+@font-face{
+	font-family: 'Roboto-Condensed';
+	src: url("fonts/Roboto-Condensed.ttf") format("truetype");
+	font-weight:normal;
+}
+
+@media (min-width: 1500px){
+	.container{width:1500px;}
+}
+
+/* HEADER */
+h1,h2,h3,h4,h5,h6,p,a{
+	font-family: 'Arsenal-Bold', sans-serif;
+	font-size: 14pt;
+	margin:0px 0px 0px 0px;
+	padding:0px 0px 0px 0px;
+}
+
+body{
+    background: url("images/background_body.png");
+    background-position-x:center;
+    background-position-y:710px;
+    background-repeat: no-repeat;
+}
+
+body.body-preventa{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#001f3b+0,00182f+100&0.95+0,0.95+100 */
+	background: -moz-linear-gradient(left, rgba(0,31,59,0.95) 0%, rgba(0,24,47,0.95) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, rgba(0,31,59,0.95) 0%,rgba(0,24,47,0.95) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, rgba(0,31,59,0.95) 0%,rgba(0,24,47,0.95) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2001f3b', endColorstr='#f200182f',GradientType=1 ); /* IE6-9 */
+}
+
+body.body-programar-visita{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#001f3b+0,00182f+100&0.95+0,0.95+100 */
+	background: -moz-linear-gradient(left, rgba(0,31,59,0.95) 0%, rgba(0,24,47,0.95) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, rgba(0,31,59,0.95) 0%,rgba(0,24,47,0.95) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, rgba(0,31,59,0.95) 0%,rgba(0,24,47,0.95) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2001f3b', endColorstr='#f200182f',GradientType=1 ); /* IE6-9 */
+}
+
+.navbar.pc{
+	margin-bottom: 0px;
+	z-index:10;
+}
+
+.navbar.pc-hd{
+	margin-bottom: 0px;
+	z-index:20;
+}
+
+.navbar-inverse{
+	background-color: rgba(255, 255, 255, 1);
+    border:none;
+    border-radius: 0px;
+	border-bottom: 4px solid #ccb16d;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+.navbar-inverse .navbar-nav> li{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 35px 0px 0px 0px;
+}
+
+@media screen and (max-width: 1499px) {
+	.navbar-inverse .navbar-nav> li{
+	    text-align: center;
+	    text-transform: uppercase;
+	    padding: 35px 0px 0px 0px;
+	}
+}
+
+@media screen and (max-width: 1199px) {
+	.navbar-inverse .navbar-nav> li{
+	    text-align: center;
+	    text-transform: uppercase;
+	    padding: 30px 0px 0px 0px;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.navbar-inverse .navbar-nav> li{
+	    text-align: center;
+	    text-transform: uppercase;
+	    padding: 16px 0px 0px 0px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.navbar-inverse .navbar-nav> li{
+	    text-align: center;
+	    text-transform: uppercase;
+	    padding: 17px 0px 17px 0px;
+	}
+}
+
+.navbar-inverse .navbar-nav>li>a{
+	color: #212E58;
+	padding: 0px 38px 0px 38px;
+}
+
+@media screen and (max-width: 991px) {
+	.navbar-inverse .navbar-nav>li>a{
+		color:#212e58;
+		padding: 0px 20px 0px 20px;
+	}
+}
+
+.navbar-inverse .navbar-nav>li>a:focus{
+	color:#212e58;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover{
+	color:#ccb16d;
+}
+
+.navbar-collapse{
+	float:right;
+}
+
+.navbar-inverse .navbar-toggle{
+	background-color: black;
+}
+
+.navbar-inverse .navbar-collapse{
+	border:none;
+}
+
+button.navbar-toggle.collapsed{
+	border:none;
+	border-left: 1px solid;
+	margin-top: 10px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	min-height: 50px;
+	min-width: 45px;
+}
+
+button.navbar-toggle{
+	border:none;
+	border-left: 1px solid;
+	margin-top: 5px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	min-height: 50px;
+	min-width: 45px;
+}
+
+.navbar-inverse .navbar-nav>.active>a{
+	color:#ccb16d;
+	background-color: transparent;
+}
+
+.navbar-inverse .navbar-nav>.active>a:visited{
+	color:#ccb16d;
+	background-color: transparent;
+}
+
+.navbar-inverse .navbar-nav>.active>a:focus{
+	color:#ccb16d;
+	background-color: transparent;
+}
+
+.navbar-inverse .navbar-nav>.active>a:hover{
+	color:#ccb16d;
+	background-color: transparent;
+}
+
+.container>.navbar-collapse{
+	margin-right:0px;
+}
+
+.container>.navbar-header{
+	margin-right: 0px;
+	padding-right: 0px;
+}
+
+.container-fluid.slider-web{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.container.slider-web{
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.row.sin-padding{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.info-slider-web{
+	background-color:rgba(0, 31, 59, 0.89);
+	border-bottom:3px solid #F4DE7F;
+	top:150px;
+	color:white;
+	padding:30px 55px 40px 30px;
+	position: absolute;
+	text-align: left;
+}
+
+@media screen and (max-width: 1499px) {
+	.info-slider-web{
+		background-color:rgba(0, 31, 59, 0.89);
+		border-bottom:3px solid #F4DE7F;
+		top:60px;
+		color:white;
+		padding:30px 55px 40px 30px;
+		position: absolute;
+		text-align: left;
+	}
+}
+
+@media screen and (max-width: 1199px) {
+	.info-slider-web{
+		background-color:rgba(0, 31, 59, 0.89);
+		border-bottom:3px solid #F4DE7F;
+		top:25px;
+		color:white;
+		padding:30px 55px 40px 30px;
+		position: absolute;
+		text-align: left;
+	}
+}
+
+.info-slider-web-responsive{
+	background-color:rgba(0, 31, 59, 0.89);
+	border-bottom:3px solid #F4DE7F;
+	top:175px;
+	color:white;
+	padding:30px 55px 40px 30px;
+	text-align: left;
+	margin-top: 30px;
+}
+
+.info-index-small{
+    background: url("images/background_info_index_responsive-sm.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 150px;
+    padding:0px 0px 30px 0px;
+}
+
+.info-index{
+    background: url("images/background_info_index_responsive.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 150px;
+    padding:0px 0px 30px 0px;
+}
+
+/* SECCIONES*/
+.slider{
+	margin-top: 109px;
+	background-color: white;
+}
+
+.slider-web-interiores{
+	margin-top:0px;
+}
+
+.seccion_blanca_01{
+    width: 100%;
+    margin: 110px 0px 0px 0px;
+}
+
+.seccion_03_responsive{
+	width:100%;
+	text-align:center;
+}
+
+.seccion_blanca_04{
+    width: 100%;
+    margin: 70px 0px 95px 0px;
+    z-index: 100;
+}
+
+.seccion_blanca_05{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c69b41+1,f5f2ab+50,c69b41+100 */
+	background: rgb(198,155,65); /* Old browsers */
+	background: -moz-linear-gradient(left, rgba(198,155,65,1) 1%, rgba(245,242,171,1) 50%, rgba(198,155,65,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, rgba(198,155,65,1) 1%,rgba(245,242,171,1) 50%,rgba(198,155,65,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, rgba(198,155,65,1) 1%,rgba(245,242,171,1) 50%,rgba(198,155,65,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c69b41', endColorstr='#c69b41',GradientType=1 ); /* IE6-9 */
+	width: 100%;
+}
+
+.seccion_blanca_06{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#001f3b+0,00182f+100&0.95+0,0.95+100 */
+	background: -moz-linear-gradient(left, rgba(0,31,59,0.95) 0%, rgba(0,24,47,0.95) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, rgba(0,31,59,0.95) 0%,rgba(0,24,47,0.95) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, rgba(0,31,59,0.95) 0%,rgba(0,24,47,0.95) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2001f3b', endColorstr='#f200182f',GradientType=1 ); /* IE6-9 */
+	width: 100%;
+	padding:60px 0px 60px 0px;
+}
+
+footer{
+	background-color: white;
+    border-top:5px solid #ccb16d;
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+    padding: 60px 0px 50px 0px;
+}
+
+.seccion_07{
+    background-color: #000611;
+    width: 100%;
+    padding: 25px 0px 25px 0px;
+}
+
+.seccion_programar_visita{
+    background: url("images/Altos del palmar casa modelo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+	margin-top: 83px;
+	min-height: 830px;
+	padding: 145px 0px 70px 0px;
+}
+
+.fondo_formulario_visitenos{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#001f3b+0,00182f+100&0.95+0,0.95+100 */
+	background: -moz-linear-gradient(left, rgba(0,31,59,0.95) 0%, rgba(0,24,47,0.95) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, rgba(0,31,59,0.95) 0%,rgba(0,24,47,0.95) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, rgba(0,31,59,0.95) 0%,rgba(0,24,47,0.95) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2001f3b', endColorstr='#f200182f',GradientType=1 ); /* IE6-9 */
+	overflow: hidden;
+	padding:26px 55px 40px 55px;
+}
+
+@media screen and (max-width: 991px) {
+	.fondo_formulario_visitenos{
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#001f3b+0,00182f+100&0.95+0,0.95+100 */
+		background: -moz-linear-gradient(left, rgba(0,31,59,0.95) 0%, rgba(0,24,47,0.95) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(left, rgba(0,31,59,0.95) 0%,rgba(0,24,47,0.95) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to right, rgba(0,31,59,0.95) 0%,rgba(0,24,47,0.95) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2001f3b', endColorstr='#f200182f',GradientType=1 ); /* IE6-9 */
+		overflow: hidden;
+		margin-left: 30px;
+		padding:26px 55px 40px 55px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.fondo_formulario_visitenos{
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#001f3b+0,00182f+100&0.95+0,0.95+100 */
+		background: -moz-linear-gradient(left, rgba(0,31,59,0.95) 0%, rgba(0,24,47,0.95) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(left, rgba(0,31,59,0.95) 0%,rgba(0,24,47,0.95) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to right, rgba(0,31,59,0.95) 0%,rgba(0,24,47,0.95) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2001f3b', endColorstr='#f200182f',GradientType=1 ); /* IE6-9 */
+		overflow: hidden;
+		margin-left: 30px;
+		padding:26px 20px 40px 20px;
+	}
+}
+
+.fondo_formulario_preventa{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#001f3b+0,00182f+100&0.95+0,0.95+100 */
+	background: -moz-linear-gradient(left, rgba(0,31,59,0.95) 0%, rgba(0,24,47,0.95) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, rgba(0,31,59,0.95) 0%,rgba(0,24,47,0.95) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, rgba(0,31,59,0.95) 0%,rgba(0,24,47,0.95) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2001f3b', endColorstr='#f200182f',GradientType=1 ); /* IE6-9 */
+	overflow: hidden;
+	padding:35px 55px 30px 55px;
+}
+
+.fondo_formulario_preventa_2{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#001f3b+0,00182f+100&0.95+0,0.95+100 */
+	background: -moz-linear-gradient(left, rgba(0,31,59,0.95) 0%, rgba(0,24,47,0.95) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, rgba(0,31,59,0.95) 0%,rgba(0,24,47,0.95) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, rgba(0,31,59,0.95) 0%,rgba(0,24,47,0.95) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2001f3b', endColorstr='#f200182f',GradientType=1 ); /* IE6-9 */
+	overflow: hidden;
+	padding:35px 55px 0px 55px;
+}
+
+.fondo_formulario_nodo_preventa{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#001f3b+0,00182f+100&0.95+0,0.95+100 */
+	background: -moz-linear-gradient(left, rgba(0,31,59,0.95) 0%, rgba(0,24,47,0.95) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, rgba(0,31,59,0.95) 0%,rgba(0,24,47,0.95) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, rgba(0,31,59,0.95) 0%,rgba(0,24,47,0.95) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2001f3b', endColorstr='#f200182f',GradientType=1 ); /* IE6-9 */
+	overflow: hidden;
+	padding:35px 55px 30px 55px;
+}
+
+@media screen and (max-width: 991px) {
+	.fondo_formulario_nodo_preventa{
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#001f3b+0,00182f+100&0.95+0,0.95+100 */
+		background: -moz-linear-gradient(left, rgba(0,31,59,0.95) 0%, rgba(0,24,47,0.95) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(left, rgba(0,31,59,0.95) 0%,rgba(0,24,47,0.95) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to right, rgba(0,31,59,0.95) 0%,rgba(0,24,47,0.95) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2001f3b', endColorstr='#f200182f',GradientType=1 ); /* IE6-9 */
+		overflow: hidden;
+		margin-left: 30px;
+		padding:35px 55px 30px 55px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.fondo_formulario_nodo_preventa{
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#001f3b+0,00182f+100&0.95+0,0.95+100 */
+		background: -moz-linear-gradient(left, rgba(0,31,59,0.95) 0%, rgba(0,24,47,0.95) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(left, rgba(0,31,59,0.95) 0%,rgba(0,24,47,0.95) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to right, rgba(0,31,59,0.95) 0%,rgba(0,24,47,0.95) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2001f3b', endColorstr='#f200182f',GradientType=1 ); /* IE6-9 */
+		overflow: hidden;
+		margin-left: 30px;
+		padding:35px 20px 30px 20px;
+	}
+}
+
+.fondo_formulario_nodo_preventa_2{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#001f3b+0,00182f+100&0.95+0,0.95+100 */
+	background: -moz-linear-gradient(left, rgba(0,31,59,0.95) 0%, rgba(0,24,47,0.95) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, rgba(0,31,59,0.95) 0%,rgba(0,24,47,0.95) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, rgba(0,31,59,0.95) 0%,rgba(0,24,47,0.95) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2001f3b', endColorstr='#f200182f',GradientType=1 ); /* IE6-9 */
+	overflow: hidden;
+	padding:35px 55px 0px 55px;
+}
+
+@media screen and (max-width: 991px) {
+	.fondo_formulario_nodo_preventa_2{
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#001f3b+0,00182f+100&0.95+0,0.95+100 */
+		background: -moz-linear-gradient(left, rgba(0,31,59,0.95) 0%, rgba(0,24,47,0.95) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(left, rgba(0,31,59,0.95) 0%,rgba(0,24,47,0.95) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to right, rgba(0,31,59,0.95) 0%,rgba(0,24,47,0.95) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2001f3b', endColorstr='#f200182f',GradientType=1 ); /* IE6-9 */
+		overflow: hidden;
+		margin-left: 30px;
+		padding:35px 55px 0px 55px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.fondo_formulario_nodo_preventa_2{
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#001f3b+0,00182f+100&0.95+0,0.95+100 */
+		background: -moz-linear-gradient(left, rgba(0,31,59,0.95) 0%, rgba(0,24,47,0.95) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(left, rgba(0,31,59,0.95) 0%,rgba(0,24,47,0.95) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to right, rgba(0,31,59,0.95) 0%,rgba(0,24,47,0.95) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2001f3b', endColorstr='#f200182f',GradientType=1 ); /* IE6-9 */
+		overflow: hidden;
+		margin-left: 30px;
+		padding:35px 20px 0px 20px;
+	}
+}
+
+.seccion_oferta_preventa{
+    background: url("images/venta en melgar.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+	margin-top: 106px;
+	min-height: 830px;
+	padding: 20px 0px 100px 0px;
+}
+
+/*DECORACION TEXTO*/
+.borde_inferior_dorado{
+	border-bottom: 2px solid #CCB16D;
+	max-width: 530px;
+	margin: 0 auto;
+}
+
+.borde_inferior_dorado_2{
+	border-bottom: 2px solid #CCB16D;
+	max-width: 170px;
+	margin: 0 auto;
+}
+
+.borde_inferior_dorado_3{
+	border-bottom: 2px solid #CCB16D;
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+.fondo_texto_boton_call_to_action{
+	background-color: #212E58;
+	margin:30px 0px 30px 0px;
+	min-height: 317px;
+}
+
+@media screen and (max-width: 1499px) {
+	.fondo_texto_boton_call_to_action{
+		background-color: #212E58;
+		margin:30px 0px 30px 0px;
+		min-height: 243px;
+	}
+}
+
+@media screen and (max-width: 1199px) {
+	.fondo_texto_boton_call_to_action{
+		background-color: #212E58;
+		margin:30px 0px 30px 0px;
+		min-height: 199px;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.fondo_texto_boton_call_to_action{
+		background-color: #212E58;
+		margin:0px 0px 30px 0px;
+		min-height: 170px;
+	}
+}
+
+.row.bordes-laterales{
+	border-left: 1px solid #ccb16d;
+	border-right: 1px solid #ccb16d ;
+}
+
+/* ESTILOS DE TEXTOS*/
+.texto_arsenal_regular_40{
+	color:#cea040;
+	font-family: 'Arsenal-Regular', sans-serif;
+	font-size: 40pt;
+	text-align: center;
+	padding: 10px;
+}
+
+.texto_arsenal_regular_22{
+	border:1px solid #cea040;
+	color:#cea040;
+	font-family: 'Arsenal-Regular', sans-serif;
+	font-size: 22pt;
+	line-height: 22pt;
+	text-align: center;
+	padding:15px 0px 10px 0px;
+}
+
+.texto_arsenal_regular_36{
+	color:#212e58;
+	font-family: 'Arsenal-Regular', sans-serif;
+	font-size: 25pt;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+.texto_arsenal_regular_36_ubicacion{
+	color:#212e58;
+	font-family: 'Arsenal-Regular', sans-serif;
+	font-size: 25pt;
+	border-bottom: 2px solid #ccb16d;
+	padding-bottom: 10px;
+}
+
+.texto_arsenal_bold_36{
+	color:#212e58;
+	font-family: 'Arsenal-Bold', sans-serif;
+	font-size: 25pt;
+}
+
+.texto_arsenal_bold_36_ubicacion{
+	color:#212e58;
+	font-family: 'Arsenal-Bold', sans-serif;
+	font-size: 25pt;
+}
+
+
+.texto_arsenal_regular_30_dorado{
+	color:#F4DE7F;
+	font-family: 'Arsenal-Regular', sans-serif;
+	font-size: 25pt;
+	border-bottom: 1px solid white;
+	padding-bottom:10px;
+}
+
+.texto_arsenal_regular_30_dorado_pop_up{
+	color:#F4DE7F;
+	font-family: 'Arsenal-Regular', sans-serif;
+	font-size: 21pt;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#001f3b+0,00182f+100&0.95+0,0.95+100 */
+	background: -moz-linear-gradient(left, rgba(0,31,59,0.95) 0%, rgba(0,24,47,0.95) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, rgba(0,31,59,0.95) 0%,rgba(0,24,47,0.95) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, rgba(0,31,59,0.95) 0%,rgba(0,24,47,0.95) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2001f3b', endColorstr='#f200182f',GradientType=1 ); /* IE6-9 */
+	overflow: hidden;
+	padding: 35px 55px 0px 55px;
+	text-align:center;
+}
+
+.texto_arsenal_regular_30_dorado_nodo_preventa{
+	color:#F4DE7F;
+	font-family: 'Arsenal-Regular', sans-serif;
+	font-size: 21pt;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#001f3b+0,00182f+100&0.95+0,0.95+100 */
+	background: -moz-linear-gradient(left, rgba(0,31,59,0.95) 0%, rgba(0,24,47,0.95) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, rgba(0,31,59,0.95) 0%,rgba(0,24,47,0.95) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, rgba(0,31,59,0.95) 0%,rgba(0,24,47,0.95) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2001f3b', endColorstr='#f200182f',GradientType=1 ); /* IE6-9 */
+	overflow: hidden;
+	margin-left: 0px;
+	padding: 35px 55px 0px 55px;
+	text-align:center;
+}
+
+@media screen and (max-width: 991px) {
+	.texto_arsenal_regular_30_dorado_nodo_preventa{
+		color:#F4DE7F;
+		font-family: 'Arsenal-Regular', sans-serif;
+		font-size: 21pt;
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#001f3b+0,00182f+100&0.95+0,0.95+100 */
+		background: -moz-linear-gradient(left, rgba(0,31,59,0.95) 0%, rgba(0,24,47,0.95) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(left, rgba(0,31,59,0.95) 0%,rgba(0,24,47,0.95) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to right, rgba(0,31,59,0.95) 0%,rgba(0,24,47,0.95) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2001f3b', endColorstr='#f200182f',GradientType=1 ); /* IE6-9 */
+		overflow: hidden;
+		margin-left: 30px;
+		padding: 35px 55px 0px 55px;
+		text-align:center;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.texto_arsenal_regular_30_dorado_nodo_preventa{
+		color:#F4DE7F;
+		font-family: 'Arsenal-Regular', sans-serif;
+		font-size: 21pt;
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#001f3b+0,00182f+100&0.95+0,0.95+100 */
+		background: -moz-linear-gradient(left, rgba(0,31,59,0.95) 0%, rgba(0,24,47,0.95) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(left, rgba(0,31,59,0.95) 0%,rgba(0,24,47,0.95) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to right, rgba(0,31,59,0.95) 0%,rgba(0,24,47,0.95) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2001f3b', endColorstr='#f200182f',GradientType=1 ); /* IE6-9 */
+		overflow: hidden;
+		margin-left: 30px;
+		padding: 35px 55px 0px 55px;
+		text-align:center;
+	}
+}
+
+.texto_arsenal_regular_30_dorado_centrado{
+	color:#F4DE7F;
+	font-family: 'Arsenal-Regular', sans-serif;
+	font-size: 25pt;
+	padding-bottom:15px;
+	text-align:center;
+}
+
+.texto_arsenal_bold_30{
+	font-family: 'Arsenal-Bold', sans-serif;
+	font-size: 25pt;
+}
+
+.texto_arsenal_regular_azul_30{
+	color:#212E58;
+	font-family: 'Arsenal-Regular', sans-serif;
+	font-size: 25pt;
+	text-align: center;
+	margin:100px 0px 95px 0px;
+}
+
+.texto_arsenal_bold_azul_30{
+	color:#212E58;
+	font-family: 'Arsenal-Bold', sans-serif;
+	font-size: 25pt;
+	text-align: center;
+	margin:50px 0px 100px 0px;
+}
+
+.texto_arsenal_regular_blanco_25{
+	color:white;
+	line-height: 30pt;
+	font-family: 'Arsenal-Regular', sans-serif;
+	text-align: center;
+	padding-top: 100px;
+}
+
+.texto_arsenal_bold_blanco_25_normal{
+	color:white;
+	font-family: 'Arsenal-Regular', sans-serif;
+	font-size: 25pt;
+	text-align: center;
+}
+
+@media screen and (max-width: 1499px) {
+	.texto_arsenal_regular_blanco_25{
+		color:white;
+		line-height: 30pt;
+		font-family: 'Arsenal-Regular', sans-serif;
+		font-size: 25pt;
+		text-align: center;
+		padding-top: 60px;
+	}
+
+	.texto_arsenal_bold_blanco_25_normal{
+		color:white;
+		font-family: 'Arsenal-Regular', sans-serif;
+		font-size: 25pt;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 1199px) {
+	.texto_arsenal_regular_blanco_25{
+		color:white;
+		line-height: 24pt;
+		font-family: 'Arsenal-Regular', sans-serif;
+		font-size: 21pt;
+		text-align: center;
+		padding-top: 50px;
+	}
+
+	.texto_arsenal_bold_blanco_25_normal{
+		color:white;
+		font-family: 'Arsenal-Regular', sans-serif;
+		font-size: 21pt;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.texto_arsenal_regular_blanco_25{
+		color:white;
+		line-height: 24pt;
+		font-family: 'Arsenal-Regular', sans-serif;
+		font-size: 21pt;
+		text-align: center;
+		padding-top: 35px;
+	}
+
+	.texto_arsenal_bold_blanco_25_normal{
+		color:white;
+		font-family: 'Arsenal-Regular', sans-serif;
+		font-size: 21pt;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.texto_arsenal_regular_blanco_25{
+		color:white;
+		line-height: 24pt;
+		font-family: 'Arsenal-Regular', sans-serif;
+		font-size: 21pt;
+		text-align: center;
+		padding-top: 35px;
+	}
+
+	.texto_arsenal_bold_blanco_25_normal{
+		color:white;
+		font-family: 'Arsenal-Regular', sans-serif;
+		font-size: 21pt;
+		text-align: center;
+	}
+}
+
+.texto_arsenal_bold_blanco_25_normal:hover{
+	color:white;
+	text-decoration:none;
+}
+
+.texto_arsenal_bold_blanco_25{
+	color:#F4DE7F;
+	font-family: 'Arsenal-Bold', sans-serif;
+}
+
+.texto_arsenal_bold_blanco_25:hover{
+	color:#F4DE7F;
+	text-decoration:none;
+}
+
+.texto_arsenal_bold_25_azul{
+    background: url("images/icono-area.png");
+    background-repeat: no-repeat;
+    background-position-x:15px;
+	color:#212e58;
+	float:right;
+	font-family: 'Arsenal-Bold', sans-serif;
+	font-size: 21pt;
+	margin:80px 30px 60px 0px;
+	padding:15px 0px 0px 145px;
+	min-height: 100px;
+}
+
+.texto_arsenal_bold_25_azul_2{
+    background: url("images/icono-casa.png");
+    background-repeat: no-repeat;
+    background-position-x:15px;
+	color:#212e58;
+	float:left;
+	font-family: 'Arsenal-Bold', sans-serif;
+	font-size: 21pt;
+	margin:80px 0px 100px 0px;
+	padding:15px 0px 0px 145px;
+	min-height: 100px;
+}
+
+.texto_arsenal_bold_25_azul_3{
+    background: url("images/icono-area.png");
+    background-repeat: no-repeat;
+    background-position-x:15px;
+	color:#212e58;
+	font-family: 'Arsenal-Bold', sans-serif;
+	font-size: 21pt;
+	margin:80px 0px 00px 0px;
+	padding:15px 0px 0px 145px;
+	min-height: 100px;
+}
+
+.texto_arsenal_bold_25_azul_4{
+    background: url("images/icono-casa.png");
+    background-repeat: no-repeat;
+    background-position-x:15px;
+	color:#212e58;
+	font-family: 'Arsenal-Bold', sans-serif;
+	font-size: 21pt;
+	margin:80px 0px 100px 0px;
+	padding:15px 0px 0px 145px;
+	min-height: 100px;
+}
+
+.texto_arsenal_bold_azul_18_centrado{
+	text-align: center;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#001f3b+0,00182f+100&0.95+0,0.95+100 */
+	background: -moz-linear-gradient(left, rgba(0,31,59,0.95) 0%, rgba(0,24,47,0.95) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, rgba(0,31,59,0.95) 0%,rgba(0,24,47,0.95) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, rgba(0,31,59,0.95) 0%,rgba(0,24,47,0.95) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2001f3b', endColorstr='#f200182f',GradientType=1 ); /* IE6-9 */
+}
+
+.texto_arsenal_bold_azul_18{
+	background-color:#F4DE7F;
+	color:#212E58;
+	font-family: 'Arsenal-Bold', sans-serif;
+	font-size: 18pt;
+	padding:10px 15px 10px 15px;
+}
+
+.texto_arsenal_bold_azul_18:hover{
+	background-color:#212E58;
+	color:white;
+	text-decoration: none;
+}
+
+.texto_arsenal_bold_azul_18:focus{
+	color:white;
+	text-decoration: none;
+}
+
+.texto_arsenal_regular_21_preventa{
+	color:#212E58;
+	font-family: 'Arsenal-Regular', sans-serif;
+	font-size: 21pt;
+	padding: 10px 00px 10px 0px;
+	text-align: center;
+}
+
+.texto_arsenal_regular_21_preventa:hover{
+	color:white;
+	text-decoration: none;
+}
+
+.texto_arsenal_bold_azul_18_preventa{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c69b41+1,f5f2ab+50,c69b41+100 */
+	background: rgb(198,155,65); /* Old browsers */
+	background: -moz-linear-gradient(left, rgba(198,155,65,1) 1%, rgba(245,242,171,1) 50%, rgba(198,155,65,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, rgba(198,155,65,1) 1%,rgba(245,242,171,1) 50%,rgba(198,155,65,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, rgba(198,155,65,1) 1%,rgba(245,242,171,1) 50%,rgba(198,155,65,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c69b41', endColorstr='#c69b41',GradientType=1 ); /* IE6-9 */
+	color:#212E58;
+	font-family: 'Arsenal-Bold', sans-serif;
+	font-size: 18pt;
+	margin:0px 0px 0px 0px;
+	padding: 10px 0px 10px 0px;
+	text-align: center;
+	min-width: 100%;
+}
+
+.texto_arsenal_bold_azul_18_nodo_preventa{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c69b41+1,f5f2ab+50,c69b41+100 */
+	background: rgb(198,155,65); /* Old browsers */
+	background: -moz-linear-gradient(left, rgba(198,155,65,1) 1%, rgba(245,242,171,1) 50%, rgba(198,155,65,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, rgba(198,155,65,1) 1%,rgba(245,242,171,1) 50%,rgba(198,155,65,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, rgba(198,155,65,1) 1%,rgba(245,242,171,1) 50%,rgba(198,155,65,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c69b41', endColorstr='#c69b41',GradientType=1 ); /* IE6-9 */
+	color:#212E58;
+	font-family: 'Arsenal-Bold', sans-serif;
+	font-size: 18pt;
+	margin-left: 0px;
+	padding: 10px 0px 10px 0px;
+	text-align: center;
+}
+
+@media screen and (max-width: 991px) {
+	.texto_arsenal_bold_azul_18_nodo_preventa{
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c69b41+1,f5f2ab+50,c69b41+100 */
+		background: rgb(198,155,65); /* Old browsers */
+		background: -moz-linear-gradient(left, rgba(198,155,65,1) 1%, rgba(245,242,171,1) 50%, rgba(198,155,65,1) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(left, rgba(198,155,65,1) 1%,rgba(245,242,171,1) 50%,rgba(198,155,65,1) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to right, rgba(198,155,65,1) 1%,rgba(245,242,171,1) 50%,rgba(198,155,65,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c69b41', endColorstr='#c69b41',GradientType=1 ); /* IE6-9 */
+		color:#212E58;
+		font-family: 'Arsenal-Bold', sans-serif;
+		font-size: 18pt;
+		margin-left: 30px;
+		padding: 10px 0px 10px 0px;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.texto_arsenal_bold_azul_18_nodo_preventa{
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c69b41+1,f5f2ab+50,c69b41+100 */
+		background: rgb(198,155,65); /* Old browsers */
+		background: -moz-linear-gradient(left, rgba(198,155,65,1) 1%, rgba(245,242,171,1) 50%, rgba(198,155,65,1) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(left, rgba(198,155,65,1) 1%,rgba(245,242,171,1) 50%,rgba(198,155,65,1) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to right, rgba(198,155,65,1) 1%,rgba(245,242,171,1) 50%,rgba(198,155,65,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c69b41', endColorstr='#c69b41',GradientType=1 ); /* IE6-9 */
+		color:#212E58;
+		font-family: 'Arsenal-Bold', sans-serif;
+		font-size: 18pt;
+		margin-left: 30px;
+		padding: 10px 0px 10px 0px;
+		text-align: center;
+	}
+}
+
+.texto_arsenal_regular_17_centrado{
+	text-align: center;
+	margin-top: 30px;
+}
+
+.texto_arsenal_regular_17_centrado_pop_up{
+	text-align: center;
+}
+
+.texto_arsenal_regular_17_blanco{
+	background: transparent;
+	border:1px solid white;
+	border-radius: 0px;
+	color:#C6C6C6;
+	font-family: 'Arsenal-Regular', sans-serif;
+	font-size: 17pt;
+	padding:5px 10px 5px 10px;
+	text-align: center;
+}
+
+.texto_arsenal_regular_17_blanco:hover{
+	color:#F4DE7F;
+	text-decoration: none;
+}
+
+.texto_arsenal_regular_17_dorado{
+	color:#CCB16D;
+	font-family: 'Arsenal-Regular', sans-serif;
+	font-size: 17pt;
+	line-height: 28pt;
+	text-align: center;
+}
+
+.texto_arsenal_regular_17_dorado:hover{
+	color:#212E58;
+	text-decoration:none;
+}
+
+.texto_arsenal_regular_17_dorado:focus{
+	color:#CCB16D;
+	text-decoration:none;
+}
+
+.texto_arsenal_regular_17_dorado_margin{
+	color:#CCB16D;
+	font-family: 'Arsenal-Regular', sans-serif;
+	font-size: 17pt;
+	line-height: 28pt;
+	margin-top: 50px;
+	text-align: center;
+}
+
+.texto_arsenal_regular_17_dorado_margin:hover{
+	color:#212E58;
+	text-decoration:none;
+}
+
+.texto_arsenal_regular_17_dorado_margin:focus{
+	color:#CCB16D;
+	text-decoration:none;
+}
+
+.texto_arsenal_regular_17_dorado_ultimo{
+	color:#CCB16D;
+	font-family: 'Arsenal-Regular', sans-serif;
+	font-size: 17pt;
+	line-height: 28pt;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.texto_arsenal_regular_17_dorado_ultimo:hover{
+	color:#212E58;
+	text-decoration:none;
+}
+
+.texto_arsenal_regular_17_dorado_ultimo:focus{
+	color:#CCB16D;
+	text-decoration:none;
+}
+
+.texto_lato_regular_16_main{
+	text-align: center;
+}
+
+.texto_lato_regular_16{
+	color:#212E58;
+	font-family: 'Lato-Regular', sans-serif;
+	font-size: 14pt;
+	margin:20px 0px 30px 0px;
+	text-align: center;
+}
+
+.texto_lato_regular_16:hover{
+	color:#CCB16D;
+	text-decoration: none;
+}
+
+.texto_lato_regular_16_02{
+	color:#212E58;
+	font-family: 'Lato-Regular', sans-serif;
+	font-size: 14pt;
+	margin:0px 0px 30px 0px;
+	text-align: center;
+}
+
+.texto_roboto_thin_16_azul{
+	color:#212E58;
+	font-family: 'Roboto-Thin', sans-serif;
+	font-size: 16pt;
+	text-align: center;
+}
+
+.texto_arsenal_bold_16_azul{
+	border:2px solid #ccb16d;
+	color:#212E58;
+	font-family: 'Arsenal-Bold', sans-serif;
+	font-size: 16pt;
+	text-align: center;
+	padding: 10px 0px 10px 0px;
+	margin: 0 auto;
+	width: 80%;
+}
+
+.texto_roboto_regular_15_blanco{
+	color:white;
+	font-family: 'Arsenal-Regular', sans-serif;
+	font-size: 14pt;
+	text-align:center;
+	padding:30px 0px 30px 0px;
+}
+
+.texto_roboto_regular_15_blanco_preventa{
+	color:white;
+	font-family: 'Roboto-Regular', sans-serif;
+	font-size: 14pt;
+	padding:0px 0px 10px 0px;
+}
+
+.texto_roboto_bold_italic_15_blanco_preventa{
+	color:white;
+	font-family: 'Roboto-Bold-Italic', sans-serif;
+	font-size: 14pt;
+	padding:0px 0px 10px 0px;
+}
+
+.texto_arsenal_regular_15_dorado{
+	color:#ccb16d;
+	font-family: 'Arsenal-Regular', sans-serif;
+	font-size: 15pt;
+	float: right;
+}
+
+.texto_roboto_regular_15{
+	color:#212E58;
+	font-family: 'Roboto-Regular', sans-serif;
+	font-size: 15pt;
+	line-height: 20pt;
+	margin:45px 0px 0px	0px;
+	text-align: center;
+}
+
+.texto_roboto_thin_15{
+	color:#212E58;
+	font-family: 'Roboto-Thin', sans-serif;
+	font-size: 15pt;
+	line-height: 20pt;
+	margin:45px 0px 0px	0px;
+	text-align: center;
+}
+
+.texto_roboto_thin_15_ubicacion{
+	color:#212E58;
+	font-family: 'Roboto-Thin', sans-serif;
+	font-size: 15pt;
+	line-height: 24pt;
+	padding:50px 0px 50px 0px;
+}
+
+.texto_arsenal_regular_azul_15{
+	color:#212E58;
+	font-family: 'Arsenal-Bold', sans-serif;
+	font-size: 15pt;
+	margin-bottom: 80px;
+	padding-top: 20px;
+	text-align: center;
+}
+
+.texto_lato_regular_14{
+	color:white;
+	font-family: 'Lato-Regular', sans-serif;
+	font-size: 14pt;
+}
+
+.texto_arsenal_regular_11_blanco{
+	color:white;
+	font-family: 'Arsenal-Regular', sans-serif;
+	font-size: 10pt;
+	text-align: justify;
+}
+
+.texto_arsenal_regular_11_blanco_responsive{
+	color:white;
+	font-family: 'Arsenal-Regular', sans-serif;
+	font-size: 10pt;
+	text-align: justify;
+	margin-bottom: 30px;
+}
+
+.texto_roboto_regular_10_blanco_preventa{
+	color:white;
+	font-family: 'Roboto-Condensed', sans-serif;
+	font-size: 10pt;
+	opacity: 0.5;
+}
+
+.texto_roboto_regular_10_blanco_preventa_centrado{
+	color:white;
+	font-family: 'Roboto-Condensed', sans-serif;
+	font-size: 10pt;
+	opacity: 0.5;
+	text-align: center;
+}
+
+/*ESTILOS IMAGENES*/
+.galeria_casas_interiores{
+	margin:30px 0px 30px 0px;
+}
+
+.embed-responsive.google-maps{
+	min-height: 400px;
+	margin-left: 15px;
+}
+
+.img_margin_bottom{
+	margin-bottom: 4px;
+}
+
+.margin-img{
+	margin:17px 10px 22px 0px;
+}
+
+.padding-img{
+	padding:30px 10px 22px 0px;
+}
+
+.padding-img-final{
+	padding:30px 0px 22px 0px;
+}
+
+.iconos-redes{
+	text-align: center;
+}
+
+.margin-bottom-v-align{
+	margin-top: 50px;
+}
+
+/*TIPOS DE ENTRADA BOTONES Y FORMULARIOS*/
+@media screen and (max-width: 767px) {
+	form.formulario-home{
+		padding-left:30px;
+	}
+}
+
+.form-control{
+	color:white;
+	background-color: rgba(255, 255, 255, 0.0);
+	border: 1px solid white;
+	border-radius: 0px;
+	text-align: center;
+}
+
+input::-webkit-input-placeholder {
+	color:#c6c6c6;
+	font-family: 'Arsenal-Regular', sans-serif;
+	font-size: 13pt;
+	text-align: center;
+}
+
+textarea::-webkit-input-placeholder {
+	color:#c6c6c6;
+	font-family: 'Arsenal-Regular', sans-serif;
+	font-size: 13pt;
+}
+
+/*CALENDARIO*/
+/* A few custom styles for date inputs */
+.calendario{
+	background: transparent;
+	border: 1px solid white;
+	color: #c6c6c6;
+    min-height: 35px;
+    border:1px solid white;
+    text-align: center;
+}
+
+input[type="date"] {
+	background: transparent;
+	border: 1px solid white;
+	color: #c6c6c6;
+    min-height: 35px;
+    border:1px solid white;
+    padding-left: 20px;
+}
+
+input[type="date"], focus {
+    color: #c6c6c6;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+}
+
+#msgSubmit_calendario{
+	margin-top:5px;
+	font-family: 'Arial', sans-serif;
+	font-size:11pt;
+}
+
+/*CHECKBOX*/
+input[type=checkbox]{
+    margin: 7px 0 0;
+    line-height: normal;
+    height:14px;
+    width:14px;
+}
+
+.input-group.date{
+	text-align: center;
+}
+
+.checkbox{
+	text-align: center;
+}
+
+.checkbox label{
+	color:white;
+	font-family: 'Arsenal-Regular', sans-serif;
+	font-size: 13pt;
+}
+
+#msgSubmit_condiciones{
+	margin-top:5px;
+	font-family: 'Arial', sans-serif;
+	font-size:11pt;
+}
+
+/*BOTON ENVIAR FORMULARIO*/
+button.btn.btn-warning.btn-lg{
+	background-color:#F4DE7F;
+	border:none;
+	border-radius: 0px;
+	color:black;
+	font-family: 'Arsenal-Bold', sans-serif;
+	font-size: 13pt;
+	padding:10px 80px 10px 80px;
+}
+
+button.btn.btn-warning.btn-lg:hover{
+	color:white;
+	background-color:#212E58;
+}
+
+.margin-top-boton{
+	margin-top: 30px;
+}
+
+.btn.disabled{
+	opacity: 1;
+}
+
+/*ANCLAS*/
+#altos_del_palmar{
+	position:relative;
+	width: 100%;
+	bottom: 143px;
+	z-index: -200;
+}
+
+#nuestras_casas{
+	position:relative;
+	width: 100%;
+	bottom: 110px;
+	z-index: -200;
+}
+
+#nuestras_casas_responsive{
+	position:relative;
+	width: 100%;
+	bottom: 70px;
+	z-index: -200;
+}
+
+
+#ancla-01{
+	position:absolute;
+	width: 100%;
+	bottom: 170px;
+	z-index: -200;
+}
+
+#ancla-02{
+	position:absolute;
+	width: 100%;
+	bottom: 15px;
+	z-index: -200;
+}
+
+#ancla-01_responsive{
+	position:absolute;
+	width: 100%;
+	bottom: 90px;
+	z-index: -200;
+}
+
+#ancla-02_responsive{
+	position:absolute;
+	width: 100%;
+	bottom: 44px;
+	z-index: -200;
+}
+
+/*Pop UP*/
+.btn.btn-default.texto_arsenal_regular_17_blanco{
+	background: transparent;
+	border:1px solid white;
+	border-radius: 0px;
+	color:#C6C6C6;
+	font-family: 'Arsenal-Regular', sans-serif;
+	font-size: 17pt;
+	padding:5px 10px 5px 10px;
+	text-align: center;
+}
+
+.btn.btn-default.texto_arsenal_regular_17_blanco:hover{
+	color:#F4DE7F;
+	text-decoration: none;
+}
+
+.close.pop-up{
+	color:white;
+	font-size: 21pt;
+	opacity:0.5;
+	right: 15px;
+	position: absolute;
+}
+
+.close.pop-up:hover{
+	opacity:1;
+}
+
+.modal-body.pop-up{
+	padding: 6px;
+}
+
+.modal-content{
+	margin-top: 200px;
+	max-width: 480px;
+}
+
+@media screen and (max-width: 1199px) {
+	.modal-content{
+		margin-top: 150px;
+		max-width: 480px;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.modal-content{
+		margin-top: 100px;
+		max-width: 480px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.modal-content{
+		margin-top: 100px;
+		max-width: 480px;
+	}
+}
